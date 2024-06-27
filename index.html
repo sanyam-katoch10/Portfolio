@@ -23,9 +23,9 @@
                     <li><a href="#portfolio">My Work</a></li>
                     <li><a href="#contact">Contact</a></li>
                     
-                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                    <i id="closeMenu" class="fa-sharp fa-solid fa-xmark"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i id="openMenu" class="fa-solid fa-bars"></i>
             </nav>
 
             
@@ -131,6 +131,18 @@
             </p>
         </div>
     </div>
-     
+     <script>
+        const sidemenu = document.getElementById('sidemenu');
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        openMenu.addEventListener('click', () => {
+            sidemenu.style.right = '0';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            sidemenu.style.right = '-200px';
+        });
+    </script>
 </body>
 </html>
