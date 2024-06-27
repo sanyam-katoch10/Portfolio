@@ -401,7 +401,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background-color: #ff004f;
+        background-color: grey;
         position: fixed;
         top: 0;
         right: -200px;
